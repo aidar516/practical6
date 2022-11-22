@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ta3vbP3IFx7r8VqQ6E9GK+TVqN8m5nwJrP/C7R+8FRVd+PYzjwyT3BCQRpEIx7XoQMCOE6SwtvWrL/fmzg4uDw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\valiu\\source\\repos\\Практические ОАИП\\Practical 6\\Practical 6\\Practical 6.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\valiu\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

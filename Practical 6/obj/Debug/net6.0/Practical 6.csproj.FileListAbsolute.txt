@@ -1,0 +1,17 @@
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\bin\Debug\net6.0\Practical 6.exe
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\bin\Debug\net6.0\Practical 6.deps.json
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\bin\Debug\net6.0\Practical 6.runtimeconfig.json
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\bin\Debug\net6.0\Practical 6.dll
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\bin\Debug\net6.0\Practical 6.pdb
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\obj\Debug\net6.0\Practical 6.csproj.AssemblyReference.cache
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\obj\Debug\net6.0\Practical 6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\obj\Debug\net6.0\Practical 6.AssemblyInfoInputs.cache
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\obj\Debug\net6.0\Practical 6.AssemblyInfo.cs
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\obj\Debug\net6.0\Practical 6.csproj.CoreCompileInputs.cache
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\obj\Debug\net6.0\Practical 6.dll
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\obj\Debug\net6.0\refint\Practical 6.dll
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\obj\Debug\net6.0\Practical 6.pdb
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\obj\Debug\net6.0\Practical 6.genruntimeconfig.cache
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\obj\Debug\net6.0\ref\Practical 6.dll
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\valiu\source\repos\Практические ОАИП\Practical 6\Practical 6\obj\Debug\net6.0\Practical 6.csproj.CopyComplete
