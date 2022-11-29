@@ -10,34 +10,33 @@ namespace Practical_6
 {
     internal class SerialandDeserial
     {
-        /*public static void JsonSerial(wwf wwfs, string put2)
+        public static void JsonSerial(wwf figure, string path)
         {
-            string json = JsonConvert.SerializeObject(wwfs);
-            File.WriteAllText(put2, json);
+            string json = JsonConvert.SerializeObject(figure);
+            File.WriteAllText(path, json);
         }
-        public static void XmlSerial(wwf wwfs, string put2)
+        public static void JsonDeserial(string path)
         {
-            XmlSerializer xml = new XmlSerializer(typeof(wwf));
-            using (FileStream f = new FileStream(put2, FileMode.OpenOrCreate))
-            {
-                xml.Serialize(f, wwfs);
-            }
-        }
-        public static void JsonDeserial(string put2)
-        {
-            string js = File.ReadAllText(put2);
+            string js = File.ReadAllText(path);
             List<wwf> result = JsonConvert.DeserializeObject<List<wwf>>(js);
         }
-        public static void XmlDeserial(string put2)
+        public static void XmlSerial(wwf figure, string path)
+        {
+            XmlSerializer xml = new XmlSerializer(typeof(wwf));
+            using (FileStream f = new FileStream(path, FileMode.OpenOrCreate))
+            {
+                xml.Serialize(f, figure);
+            }
+        }
+        public static void XmlDeserial(string path)
         {
             wwf tekst;
             XmlSerializer xml = new XmlSerializer(typeof(wwf));
-            using (FileStream ff = new FileStream(put2, FileMode.Open))
+            using (FileStream ff = new FileStream(path, FileMode.Open))
             {
                 tekst = (wwf)xml.Deserialize(ff);
             }
-        }*/
-
+        }
     }
 }
 

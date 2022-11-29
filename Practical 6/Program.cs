@@ -16,21 +16,28 @@ namespace Practical_6
             figure2.Name = "Прямоугольник";
             figure2.Height = 50;
             figure2.Width = 25;
+
+
+            List<wwf> figure = new List<wwf>();
+            figure.Add(figure1);
+            figure.Add(figure2);
+
+
             Console.WriteLine("Введите путь до файла, который вы хотите открыть");
             Console.WriteLine("------------------------------------------------");
             string put = Console.ReadLine();
+
             if (File.Exists(put))
             {
                 Console.Clear();
-                Console.WriteLine("Сохранить файл в одном из форматов(xml, json, txt) - F1.Закрыть программу - Escape.");
+
 
                 string txt = File.ReadAllText(put);
                 Console.WriteLine(txt);
 
 
-                List<wwf> wwfs = new List<wwf>();
-                wwfs.Add(figure1);
-                wwfs.Add(figure2);
+                Console.WriteLine("Сохранить файл в одном из форматов(xml, json, txt) - F1.Закрыть программу - Escape.");
+
 
                 ConsoleKeyInfo klav = Console.ReadKey();
                 while (klav.Key != ConsoleKey.Escape)
@@ -40,46 +47,34 @@ namespace Practical_6
                         Console.Clear();
                         Console.WriteLine("Введите путь до файла (с названием) куда вы хотите его сохранить");
                         string path = Console.ReadLine();
-                        if (File.Exists(path))
+
+                        if (path.Contains("json"))
                         {
-                            if (path.Contains("json"))
+                            if (put.Contains("txt"))
                             {
-                                if (put.Contains("txt"))
-                                {
-                                    string json = JsonConvert.SerializeObject(wwfs);
-                                    File.WriteAllText(path, json);
-                                }
-                                else
-                                {
-                                    string js = File.ReadAllText(path);
-                                    List<wwf> result = JsonConvert.DeserializeObject<List<wwf>>(js);
-                                }
+                                SerialandDeserial.JsonSerial(figure, path);
+
                             }
-                            else if (path.Contains("xml"))
+                            else
                             {
-                                if (put.Contains("txt"))
-                                {
-                                    XmlSerializer xml = new XmlSerializer(typeof(wwf));
-                                    using (FileStream f = new FileStream(path, FileMode.OpenOrCreate))
-                                    {
-                                        xml.Serialize(f, wwfs);
-                                    }
-                                }
-                                else
-                                {
-                                    wwf tekst;
-                                    XmlSerializer xml = new XmlSerializer(typeof(wwf));
-                                    using (FileStream ff = new FileStream(path, FileMode.Open))
-                                    {
-                                        tekst = (wwf)xml.Deserialize(ff);
-                                    }
-                                }
+                                SerialandDeserial.JsonDeserial(path);
+
                             }
                         }
-                        else
+                        else if (path.Contains("xml"))
                         {
-                            File.Create(path);
+                            if (put.Contains("txt"))
+                            {
+                                SerialandDeserial.XmlSerial(figure, path);
+
+                            }
+                            else
+                            {
+                                SerialandDeserial.JsonDeserial(path);
+
+                            }
                         }
+
                     }
                     else if (klav.Key == ConsoleKey.Escape)
                     {
