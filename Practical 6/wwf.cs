@@ -1,6 +1,6 @@
 ﻿namespace Practical_6
 {
-    internal class wwf
+    public class wwf
     {
         public string Name;
         public int Width;

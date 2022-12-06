@@ -53,12 +53,10 @@ namespace Practical_6
                             if (put.Contains("txt"))
                             {
                                 SerialandDeserial.JsonSerial(figure, path);
-
                             }
                             else
                             {
                                 SerialandDeserial.JsonDeserial(path);
-
                             }
                         }
                         else if (path.Contains("xml"))
@@ -66,12 +64,10 @@ namespace Practical_6
                             if (put.Contains("txt"))
                             {
                                 SerialandDeserial.XmlSerial(figure, path);
-
                             }
                             else
                             {
                                 SerialandDeserial.JsonDeserial(path);
-
                             }
                         }
 
